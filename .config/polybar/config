@@ -66,7 +66,7 @@ font-5 = Termsynu:size=10:antialias=false;0
 font-6 = MaterialIcons:size=12;2
 
 modules-left = i3 
-modules-right = expressvpn wireless-network-bottom filesystem cpu memory
+modules-right = wireless-network-bottom expressvpn filesystem cpu memory
 
 [module/system-bluetooth-bluetoothctl]
 type = custom/script
@@ -369,7 +369,7 @@ interface = wlp2s0
 interval = 0.5
 ping-interval = 10
 format-connected = <label-connected>
-label-connected = %local_ip%   %{T7}%{F#0f0}%{T1}%downspeed%   %{T7}%{F#999}%{T1}%upspeed%
+label-connected = %{T7}%{F#0f0}%{T1}%downspeed%   %{T7}%{F#999}%{T1}%upspeed%%{F-}   %{F#666}%{T1}S:%signal%%{F-}   %local_ip%
 
 [module/wired-network]
 type = internal/network
